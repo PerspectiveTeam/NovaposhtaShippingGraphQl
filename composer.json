@@ -1,0 +1,22 @@
+{
+  "name": "perspective/module-novaposhta-shipping-graph-ql",
+  "version": "1.0.1",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-graph-ql": "100.4.*",
+    "perspective/module-novaposhtashipping": "2.4.5.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Perspective\\NovaposhtaShippingGraphQl\\": ""
+    }
+  }
+}

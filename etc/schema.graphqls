@@ -1,0 +1,27 @@
+directive @doc(description: String="") on QUERY
+    | MUTATION
+    | FIELD
+    | FRAGMENT_DEFINITION
+    | FRAGMENT_SPREAD
+    | INLINE_FRAGMENT
+    | SCHEMA
+    | SCALAR
+    | OBJECT
+    | FIELD_DEFINITION
+    | ARGUMENT_DEFINITION
+    | INTERFACE
+    | UNION
+    | ENUM
+    | ENUM_VALUE
+    | INPUT_OBJECT
+    | INPUT_FIELD_DEFINITION
+directive @resolver(class: String) on FIELD_DEFINITION
+directive @cache(cacheable: Boolean) on FIELD_DEFINITION
+
+input CartAddressInput {
+    perspective_novaposhta_shipping_city: String
+    perspective_novaposhta_shipping_warehouse: String
+    perspective_novaposhta_shipping_street: String
+    perspective_novaposhta_shipping_building: String
+    perspective_novaposhta_shipping_flat: String
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Perspective\NovaposhtaShippingGraphQl\Model\Quote\Info\Type\ProcessorsChain">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="warehouse" xsi:type="object">Perspective\NovaposhtaShippingGraphQl\Model\Quote\Info\Type\WarehouseProcessor</item>
+                <item name="address" xsi:type="object">Perspective\NovaposhtaShippingGraphQl\Model\Quote\Info\Type\AddressProcessor</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Quote\Model\ShippingAddressManagementInterface">
+        <plugin name="perspective_quote_model_shipping_address_management_plugin"
+                type="Perspective\NovaposhtaShippingGraphQl\Plugin\ShippingAddressManagementPlugin"/>
+    </type>
+</config>

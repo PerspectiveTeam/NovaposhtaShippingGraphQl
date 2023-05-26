@@ -1,6 +1,6 @@
 {
-  "name": "perspective/module-novaposhta-shipping-graph-ql",
-  "version": "1.0.1",
+  "name": "perspectiveteam/module-novaposhta-shipping-graph-ql",
+  "version": "1.0.2",
   "description": "N/A",
   "type": "magento2-module",
   "require": {
@@ -9,7 +9,7 @@
     "perspective/module-novaposhtashipping": "2.4.5.*"
   },
   "license": [
-    "Proprietary"
+    "MIT"
   ],
   "autoload": {
     "files": [
@@ -18,5 +18,11 @@
     "psr-4": {
       "Perspective\\NovaposhtaShippingGraphQl\\": ""
     }
-  }
+  },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/PerspectiveTeam/NovaposhtaShipping.git"
+        }
+    ]
 }

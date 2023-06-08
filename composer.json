@@ -1,12 +1,12 @@
 {
   "name": "perspectiveteam/module-novaposhta-shipping-graph-ql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "N/A",
   "type": "magento2-module",
   "require": {
     "magento/framework": "*",
     "magento/module-graph-ql": "100.4.*",
-    "perspective/module-novaposhtashipping": "2.4.5.*"
+    "perspectiveteam/module-novaposhtashipping": "2.4.5.*"
   },
   "license": [
     "MIT"
